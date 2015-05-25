@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My title</title>
+  </head>
+  <body>
+  	<button id="openbutton">open</button>
+  	<script>
+  	    
+  		var button = document.getElementById('openbutton');
+  		button.onclick = function(){
+  			location.href = url;
+  		}
+  		var aParamArray = location.search.replace(/\?/, "").split("&");
+  		var aParam = {};
+  		for(var i = 0 ; i < aParamArray.length ; ++i){
+  			aParam[aParamArray[i].split("=")[0]] = aParamArray[i].split("=")[1]; 
+  		}
+  		var url = "intent://invite?code=false#Intent;scheme=linemap;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.linecorp.inhouse.linewru;end"
+  	</script>
+  </body>
+</html>
