@@ -6,5 +6,10 @@ files:
 permissions:
   - object: /
     pattern: "**"
-    owner: ec2-user
-    group: ec2-user
+    owner: kimjans
+    group: kimjans
+hooks:
+  AfterInstall:
+    - location: script/start.sh
+      timeout: 1200
+      runas: kimjans
