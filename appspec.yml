@@ -5,8 +5,8 @@ files:
      destination: /home/ec2-user/filacode
 hooks:
   AfterInstall:
-    - location: script/start.sh
+    - location: /script/start.sh
       timeout: 3600
   BeforeInstall:
-    - location: script/stop.sh
+    - location: /script/stop.sh
       timeout: 3600
