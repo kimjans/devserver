@@ -1,2 +1,2 @@
 cd /home/ec2-user/filacode/
-mkdir test
+npm install
