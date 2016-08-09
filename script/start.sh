@@ -1,2 +1,2 @@
 cd ..
-forever index.js
+sudo npm install
