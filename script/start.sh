@@ -1,3 +1,3 @@
 cd /home/ec2-user/filacode/
 npm install
-forever index.js
+forever start index.js
