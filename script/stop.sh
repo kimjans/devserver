@@ -1,1 +1,1 @@
-forever stop 0
+forever stopall
