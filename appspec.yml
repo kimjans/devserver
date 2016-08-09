@@ -3,3 +3,10 @@ os: linux
 files:
    - source: /
      destination: /home/ec2-user/filacode
+hooks:
+  AfterInstall:
+    - location: script/start.sh
+      timeout: 3600
+  BeforeInstall:
+    - location: script/stop.sh
+      timeout: 3600
