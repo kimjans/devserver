@@ -8,3 +8,8 @@ permissions:
     pattern: "**"
     owner: ec2-user
     group: ec2-user
+hooks:
+  AfterInstall:
+    - location: script/start.sh
+      timeout: 1200
+      runas: ec2-user
