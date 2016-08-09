@@ -3,11 +3,3 @@ os: linux
 files:
    - source: /
      destination: /home/ec2-user
-permissions:
-   - object: /home/ec2-user
-     pattern: "**"
-     owner: kimjans
-     group: kimjans
-     mode: 755
-     type:
-       - file
